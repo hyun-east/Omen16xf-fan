@@ -1,0 +1,13 @@
+[Unit]
+Description=OMEN 8BCA EC Fan Control (curve + keep-alive)
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStartPre=/sbin/modprobe ec_sys write_support=1
+ExecStart=/usr/local/bin/omen-fan-control.sh
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
