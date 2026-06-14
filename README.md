@@ -6,7 +6,7 @@ On this model the standard `hp-wmi` fan interface does **not** work: the firmwar
 
 This project bypasses WMI entirely and writes the fan speed **directly to the Embedded Controller (EC)**, with a temperature curve, a keep-alive loop (the firmware reclaims fan control after a timeout), and a 90 °C emergency override.
 
-> **Tested on:** HP OMEN 16-xf0052AX · Ryzen 7740hs + RTX 4060 labtop, · Ubuntu 22.04.5 · kernel 6.8.0-124-generic
+> **Tested on:** HP OMEN 16-xf0052AX · Ryzen 7840hs + RTX 4060 labtop, · Ubuntu 22.04.5 · kernel 6.8.0-124-generic
 
 ---
 
